@@ -1,0 +1,8 @@
+# IDE files
+.idea/
+
+# ignore build for production
+dist/
+
+# dependency libs
+node_modules/
