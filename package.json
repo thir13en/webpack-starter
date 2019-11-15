@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "webpack --mode=development",
     "build": "webpack --mode=production",
-    "start:dev": "webpack-dev-server"
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "@babel/cli": "~7.7.0",

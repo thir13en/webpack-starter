@@ -1,16 +1,19 @@
 {
   "parser": "babel-eslint",
-  "extends": "standard",
+  "extends": "eslint:recommended",
   "env": {
     "browser": true,
     "node": true
   },
   "rules": {
-    "quotes": [2, "single"],
-    "indent": [2, 2],
     "comma-dangle": 0,
+    "indent": [2, 2],
+    "new-cap": "off",
+    "no-else-return": 0,
     "no-mixed-requires": [0],
     "no-underscore-dangle": [0],
-    "no-else-return": 0
+    "no-unreachable": "error",
+    "quotes": [2, "single"],
+    "semi": "error"
   }
 }
