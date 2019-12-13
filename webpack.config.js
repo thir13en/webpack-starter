@@ -5,7 +5,10 @@ const projectName = 'JSCamp 2019 slides';
 const templatePath = 'src/index.template.html';
 const indexPath = 'src/js/index.js';
 
+
 module.exports = {
+  entry: path.join(__dirname, indexPath),
+  output: { filename: 'main.js' },
   module: {
     rules: [
       {
@@ -17,11 +20,7 @@ module.exports = {
       },
       {
         test:/\.(s*)css$/,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {
         test: /\.js$/,
@@ -44,9 +43,6 @@ module.exports = {
       template: path.join(__dirname, templatePath)
     })
   ],
-  entry: {
-    app: path.join(__dirname, indexPath)
-  },
   devServer: {
     compress: true,
     open: true,
@@ -55,6 +51,11 @@ module.exports = {
   },
   stats: {
     colors: true,
+  },
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    }
   },
   devtool: 'source-map'
 };

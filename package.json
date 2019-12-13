@@ -23,7 +23,6 @@
     "eslint": "~6.6.0",
     "eslint-config-standard": "~14.1.0",
     "eslint-plugin-import": "~2.18.2",
-    "eslint-plugin-node": "~10.0.0",
     "eslint-plugin-promise": "~4.2.1",
     "eslint-plugin-standard": "~4.0.1",
     "file-loader": "~4.2.0",
@@ -38,6 +37,7 @@
     "webpack-dev-server": "~3.9.0"
   },
   "dependencies": {
+    "@babel/polyfill": "~7.7.0",
     "lodash": "~4.17.15",
     "normalize.css": "~8.0.1"
   }
