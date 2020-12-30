@@ -1,7 +1,7 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin';
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
-const projectName = 'JSCamp 2019 slides';
+const projectName = 'Webpacker';
 const templatePath = 'src/index.template.html';
 const indexPath = 'src/js/index.js';
 
