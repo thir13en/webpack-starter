@@ -1,7 +1,7 @@
-import 'normalize.css';
-import '../scss/styles.scss';
+// import 'normalize.css';
+// import '../scss/styles.scss';
 
-import { setUniverse } from './universe'
+import { setUniverse } from './universe';
 
 
 setUniverse();

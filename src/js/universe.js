@@ -1,7 +1,7 @@
-import _ from 'lodash'
+// import _ from 'lodash'
 
 const setUniverse = () => {
-  document.getElementById('universe').innerText = _.join(['hello', 'universe-2555'], ' ')
+  document.getElementById('universe').innerText = 'universe-2555';
 }
 
 export { setUniverse }
