@@ -1,7 +1,9 @@
-// import _ from 'lodash'
+import _ from 'lodash';
+
+const currentUniverse = 'universe-2555';
 
 const setUniverse = () => {
-  document.getElementById('universe').innerText = 'universe-2555';
+  document.getElementById('universe').innerText = `Hello from ${currentUniverse}`;
 }
 
 export { setUniverse }

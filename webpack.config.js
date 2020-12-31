@@ -8,7 +8,7 @@ const indexPath = 'src/js/index.js';
 
 module.exports = {
   entry: path.join(__dirname, indexPath),
-  output: { filename: 'main.js' },
+  output: { filename: '[name].js' },
   module: {
     rules: [
       {
