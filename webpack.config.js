@@ -8,7 +8,9 @@ const indexPath = 'src/js/index.js';
 
 module.exports = {
   entry: path.join(__dirname, indexPath),
-  output: { filename: '[name].js' },
+  output: {
+    filename: '[name].[contenthash].bundle.js',
+  },
   module: {
     rules: [
       {
