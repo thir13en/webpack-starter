@@ -16,7 +16,7 @@ module.exports = {
       {
         test: /\.html$/,
         use: {
-          loader: "html-loader",
+          loader: 'html-loader',
           options: { minimize: true }
         }
       },
@@ -27,15 +27,15 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: { loader: "babel-loader" }
+        use: { loader: 'babel-loader' }
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/,
-        use: { loader: "file-loader" }
+        use: { loader: 'file-loader' }
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: { loader: "file-loader" }
+        use: { loader: 'file-loader' }
       }
     ]
   },
